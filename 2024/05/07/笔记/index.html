@@ -25,12 +25,12 @@
 
   
 
-<link rel="canonical" href="http://example.com/2024/04/29/python/">
+<link rel="canonical" href="http://example.com/2024/05/07/%E7%AC%94%E8%AE%B0/">
 
 
 
   <title>
-'python' |
+'笔记' |
 Yume Shoka = Hexo</title>
 <meta name="generator" content="Hexo 7.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -58,16 +58,16 @@ Yume Shoka = Hexo</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">'python'
+  <h1 itemprop="name headline">'笔记'
   </h1>
   
 <div class="meta">
-  <span class="item" title="Created: 2024-04-29 21:07:07">
+  <span class="item" title="Created: 2024-05-07 17:10:00">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">Posted on</span>
-    <time itemprop="dateCreated datePublished" datetime="2024-04-29T21:07:07+08:00">2024-04-29</time>
+    <time itemprop="dateCreated datePublished" datetime="2024-05-07T17:10:00+08:00">2024-05-07</time>
   </span>
 </div>
 
@@ -127,7 +127,7 @@ Yume Shoka = Hexo</title>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/04/29/python/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/05/07/%E7%AC%94%E8%AE%B0/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -181,7 +181,7 @@ Yume Shoka = Hexo</title>
 
 <h2 id="面向对象，构造函数"><a href="#面向对象，构造函数" class="headerlink" title="面向对象，构造函数"></a>面向对象，构造函数</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">class 月饼():</span><br><span class="line">    def __init__ (self):</span><br><span class="line">        #焙烤的时间</span><br><span class="line">        self.时间 = 0</span><br><span class="line">        #烤的状态</span><br><span class="line">        self.状态 = &#x27;生的&#x27;</span><br><span class="line">        #调料列表</span><br><span class="line">        self.调料 = []</span><br><span class="line"></span><br><span class="line">    def 焙烤时间(self,时间):</span><br><span class="line">    #1.先计算月饼整体焙烤的时间 </span><br><span class="line">        self.时间 += 时间</span><br><span class="line">        #2.用整体烤过的时间再判断</span><br><span class="line">        if 0 &lt;= self.时间 &lt; 3:</span><br><span class="line">            self.状态 = &#x27;生的&#x27;</span><br><span class="line">        elif 3 &lt;= self.时间 &lt; 5:</span><br><span class="line">            self.状态 = &#x27;半生不熟&#x27;</span><br><span class="line">        elif 5 &lt;= self.时间 &lt; 8:</span><br><span class="line">            self.状态 = &#x27;熟了&#x27;</span><br><span class="line">        else:</span><br><span class="line">            self.状态 = &#x27;糊了&#x27;</span><br><span class="line">    </span><br><span class="line">    def 添加调料(self,调料):</span><br><span class="line">        self.调料.extend(调料)</span><br><span class="line">        </span><br><span class="line">    #书写str魔法方法,属于输出对象状态。</span><br><span class="line">    def __str__ (self):</span><br><span class="line">        return f&#x27;这批月饼被考过的时间是&#123;self.时间&#125;，状态是&#123;self.状态&#125;，调料有&#123;self.调料&#125;&#x27;</span><br><span class="line">对象名 = 月饼()</span><br><span class="line">对象名.焙烤时间(2)</span><br><span class="line">对象名.添加调料([&#x27;蔓越莓&#x27;,&#x27;豆沙&#x27;])</span><br><span class="line">print(对象名)</span><br><span class="line">对象名.焙烤时间(4)</span><br><span class="line">对象名.添加调料([&#x27;蛋黄&#x27;,&#x27;蛋液&#x27;])</span><br><span class="line">print(对象名)xxxxxxxxxx class 月饼():    def __init__ (self):        #焙烤的时间        self.时间 = 0        #烤的状态        self.状态 = &#x27;生的&#x27;        #调料列表        self.调料 = []    def 焙烤时间(self,时间):    #1.先计算月饼整体焙烤的时间         self.时间 += 时间        #2.用整体烤过的时间再判断        if 0 &lt;= self.时间 &lt; 3:            self.状态 = &#x27;生的&#x27;        elif 3 &lt;= self.时间 &lt; 5:            self.状态 = &#x27;半生不熟&#x27;        elif 5 &lt;= self.时间 &lt; 8:            self.状态 = &#x27;熟了&#x27;        else:            self.状态 = &#x27;糊了&#x27;        def 添加调料(self,调料):        self.调料.extend(调料)            #书写str魔法方法,属于输出对象状态。    def __str__ (self):        return f&#x27;这批月饼被考过的时间是&#123;self.时间&#125;，状态是&#123;self.状态&#125;，调料有&#123;self.调料&#125;&#x27;对象名 = 月饼()对象名.焙烤时间(2)对象名.添加调料([&#x27;蔓越莓&#x27;,&#x27;豆沙&#x27;])print(对象名)对象名.焙烤时间(4)对象名.添加调料([&#x27;蛋黄&#x27;,&#x27;蛋液&#x27;])print(对象名)1</span><br></pre></td></tr></table></figure>
 
-<h2 id="面向对象单继承"><a href="#面向对象单继承" class="headerlink" title="面向对象单继承"></a>面向对象单继承</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">class 小头爸爸(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.age = 30</span><br><span class="line">    def 实例方法(self):</span><br><span class="line">        print(f&quot;小头爸爸的年龄是&#123;self.age&#125;岁&quot;)</span><br><span class="line">class 大头儿子(小头爸爸):</span><br><span class="line">    pass</span><br><span class="line">对象 = 大头儿子()</span><br><span class="line">对象.实例方法()</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="面向对象单继承"><a href="#面向对象单继承" class="headerlink" title="面向对象单继承"></a>面向对象单继承</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class 小头爸爸(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.age = 30</span><br><span class="line">    def 实例方法(self):</span><br><span class="line">        print(f&quot;小头爸爸的年龄是&#123;self.age&#125;岁&quot;)</span><br><span class="line">class 大头儿子(小头爸爸):</span><br><span class="line">    pass</span><br><span class="line">对象 = 大头儿子()</span><br><span class="line">对象.实例方法()</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h2 id="面向对象，多继承1"><a href="#面向对象，多继承1" class="headerlink" title="面向对象，多继承1"></a>面向对象，多继承1</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">class 叶问(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.功夫 = &#x27;咏春&#x27;</span><br><span class="line">    def 实例 (self):</span><br><span class="line">        print(f&#x27;使用&#123;self.功夫&#125;&#x27;)</span><br><span class="line"></span><br><span class="line">class 李小龙(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.功夫 = &#x27;截拳道&#x27;</span><br><span class="line">    def 实例 (self):</span><br><span class="line">        print(f&#x27;使用&#123;self.功夫&#125;&#x27;)</span><br><span class="line"></span><br><span class="line">class 圥忈(李小龙,叶问):</span><br><span class="line">    pass</span><br><span class="line">对象 = 圥忈()</span><br><span class="line">对象.实例()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class 叶问(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.功夫 = &#x27;咏春&#x27;</span><br><span class="line">    def 实例 (self):</span><br><span class="line">        print(f&#x27;使用&#123;self.功夫&#125;&#x27;)</span><br><span class="line"></span><br><span class="line">class 李小龙(叶问):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.功夫 = &#x27;截拳道&#x27;</span><br><span class="line">    def 实例 (self):</span><br><span class="line">        print(f&#x27;使用&#123;self.功夫&#125;&#x27;)</span><br><span class="line"></span><br><span class="line">class 圥忈(李小龙):</span><br><span class="line">    pass</span><br><span class="line">对象 = 圥忈()</span><br><span class="line">对象.实例()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#手动查类的继承顺序</span><br><span class="line">print(圥忈.__mro__)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -207,7 +207,7 @@ Yume Shoka = Hexo</title>
 
 <h2 id="列表总结"><a href="#列表总结" class="headerlink" title="列表总结"></a>列表总结</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">列表总结: </span><br><span class="line">1、列表格式，用中括号存数据，每个数据用逗号隔开[数据1，数据2，数据3]</span><br><span class="line">2、常用操作方法: </span><br><span class="line">(1)Index()查找数据在列表中第一次出现的位置</span><br><span class="line">(2) len0返回列表的数据个数</span><br><span class="line">(3)append 在列表末尾追加个数据</span><br><span class="line">(4)extend在列表末尾追加多个数据</span><br><span class="line">(5)insert在指定位置增加数据</span><br><span class="line">(6)del删除列表或删除列表指定下标</span><br><span class="line">(7)remove删除列表第一个指定的数据</span><br><span class="line">(8)sort列表排序</span><br></pre></td></tr></table></figure>
 
-<h2 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">元组</span><br><span class="line">只查不改可以删除</span><br><span class="line">定义单个数据</span><br><span class="line">a = （1，）元组</span><br><span class="line">a = （1）整形</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int      float         str      list 列表       tuple 元组</span><br><span class="line">set集合</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">元组</span><br><span class="line">只查不改可以删除</span><br><span class="line">定义单个数据</span><br><span class="line">a = （1，）元组</span><br><span class="line">a = （1）整形</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int      float         str      list 列表       tuple 元组</span><br><span class="line">set集合</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h2 id="字典1-tuple"><a href="#字典1-tuple" class="headerlink" title="字典1 tuple"></a>字典1 tuple</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">字典</span><br><span class="line">字典是按key键和values值的方式成对出现</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">空字典的创建</span><br><span class="line">名字=&#123;&#125;</span><br><span class="line">名字=dict（）</span><br><span class="line"></span><br><span class="line">增加和修改</span><br><span class="line">语法：字典序列名[键] = 值</span><br><span class="line">有泽改 无泽增</span><br><span class="line"></span><br><span class="line">删数据</span><br><span class="line">del字典序列名[键] 一个</span><br><span class="line">del字典序列名 删除字典</span><br><span class="line">清空字典：clear（）</span><br><span class="line">语法：字典序列名.clear（）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">查</span><br><span class="line">字典序列名[键] 存在返回值 不存在报错</span><br><span class="line">get（）</span><br><span class="line">语法：字典序列名.get(键，随便写)</span><br><span class="line">如果存在返回值，不存在返回你写的值如果没写返回None</span><br><span class="line">values（）</span><br><span class="line">语法：字典序列名.values()</span><br><span class="line">返回所有值</span><br><span class="line">items（）</span><br><span class="line">语法：字典序列名.items（）</span><br><span class="line">可迭代对象（里面的数据是元组），迭代就是重复反馈的过程</span><br><span class="line">a=&#123;&#x27;华为&#x27;:520,&#x27;小米&#x27;:520,&#x27;苹果&#x27;:14,&#x27;三星&#x27;:24&#125;</span><br><span class="line">print(a.items ()) </span><br><span class="line">dict_items([(&#x27;华为&#x27;，520),(&#x27;小米&#x27;，520),</span><br><span class="line">(&#x27;苹果&#x27;，14),(&#x27;三星&#x27;，24)])1</span><br></pre></td></tr></table></figure>
 
@@ -234,7 +234,7 @@ Yume Shoka = Hexo</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2024-05-07 17:00:29" itemprop="dateModified" datetime="2024-05-07T17:00:29+08:00">2024-05-07</time>
+    <time title="Modified: 2024-05-07 17:11:09" itemprop="dateModified" datetime="2024-05-07T17:11:09+08:00">2024-05-07</time>
   </span>
 </div>
 
@@ -270,7 +270,7 @@ Yume Shoka = Hexo</title>
   </li>
   <li class="link">
     <strong>Post link: </strong>
-    <a href="http://example.com/2024/04/29/python/" title="&#39;python&#39;">http://example.com/2024/04/29/python/</a>
+    <a href="http://example.com/2024/05/07/%E7%AC%94%E8%AE%B0/" title="&#39;笔记&#39;">http://example.com/2024/05/07/笔记/</a>
   </li>
   <li class="license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
@@ -380,7 +380,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2024/04/29/python/" title="&#39;python&#39;">'python'</a></span>
+    <span><a href="/2024/05/07/%E7%AC%94%E8%AE%B0/" title="&#39;笔记&#39;">'笔记'</a></span>
   </li>
 
       
@@ -420,7 +420,7 @@ Yume Shoka = Hexo</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '2024/04/29/python/',
+    path: '2024/05/07/笔记/',
     favicon: {
       show: "（●´3｀●）Goooood",
       hide: "(´Д｀)Booooom"
