@@ -15,9 +15,9 @@
   <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="alternate" type="application/rss+xml" title="Hexo" href="http://example.com/rss.xml" />
-<link rel="alternate" type="application/atom+xml" title="Hexo" href="http://example.com/atom.xml" />
-<link rel="alternate" type="application/json" title="Hexo" href="http://example.com/feed.json" />
+<link rel="alternate" type="application/rss+xml" title="圥忈的博客" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="圥忈的博客" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="圥忈的博客" href="http://example.com/feed.json" />
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
@@ -33,7 +33,7 @@
 
   <title>
 'matlab' |
-Yume Shoka = Hexo</title>
+Yume Shoka = 圥忈的博客</title>
 <meta name="generator" content="Hexo 7.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
   <div id="loading">
@@ -133,48 +133,52 @@ Yume Shoka = Hexo</title>
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
-    <meta itemprop="name" content="John Doe">
+    <meta itemprop="name" content="luren">
     <meta itemprop="description" content=", ">
   </span>
 
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Hexo">
+    <meta itemprop="name" content="圥忈的博客">
   </span>
 
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="MATLAB变量命名规则"><a href="#MATLAB变量命名规则" class="headerlink" title="MATLAB变量命名规则"></a>MATLAB变量命名规则</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">变量名区分大小写。</span><br><span class="line">变量名长度不超过63位。</span><br><span class="line">变量名以字母开头，可以有字母、数字和下划线组成。但不能使用标点。</span><br><span class="line">变量名简洁明了，通过变量名可以直观看出变量所表示的物理意义。</span><br></pre></td></tr></table></figure>
-
-<h2 id="MATLAB命令"><a href="#MATLAB命令" class="headerlink" title="MATLAB命令"></a>MATLAB命令</h2><h3 id="1-清空环境变量及命令"><a href="#1-清空环境变量及命令" class="headerlink" title="1.清空环境变量及命令"></a>1.清空环境变量及命令</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">clear all      清除Workspace中的所有变量</span><br><span class="line">clc            清除Command Window中的所有命令</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-注释"><a href="#2-注释" class="headerlink" title="2.注释"></a>2.注释</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">%%    有横线注释</span><br><span class="line">%     没有横线注释</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-运算"><a href="#3-运算" class="headerlink" title="3.运算"></a>3.运算</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">加+	减-	乘*	除/</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-字符与字符串"><a href="#4-字符与字符串" class="headerlink" title="4.字符与字符串"></a>4.字符与字符串</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s = &#x27;a&#x27;</span><br><span class="line">abs(a) = 97      绝对值  ascall码</span><br><span class="line">char(97) = a      字符串</span><br><span class="line">length( )         计算字符串的长度</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-num2str"><a href="#5-num2str" class="headerlink" title="5.num2str"></a>5.num2str</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">s = num2str(A)</span><br><span class="line">s = num2str(A,precision)</span><br><span class="line">s = num2str(A,formatSpec)</span><br><span class="line"></span><br><span class="line">s = num2str(A) 将数值数组转换为表示数字的字符数组。输出格式取决于原始值的量级。num2str 对使用数值为绘图添加标签和标题非常有用。</span><br><span class="line">s = num2str(A,precision)返回表示数字的字符数组，最大有效位数由 precision 指定。</span><br><span class="line">s = num2str(A,formatSpec) 将 formatSpec 指定的格式应用到 A 所有元素。</span><br></pre></td></tr></table></figure>
-
-<h6 id="randn-函数"><a href="#randn-函数" class="headerlink" title="randn()函数"></a>randn()函数</h6><p>randn()函数用于产生正态分布的随机数，其调用格式和rand()函数基本一致，如下：</p>
+    <h2 id="matlab变量命名规则"><a class="markdownIt-Anchor" href="#matlab变量命名规则">#</a> MATLAB 变量命名规则</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">变量名区分大小写。</span><br><span class="line">变量名长度不超过63位。</span><br><span class="line">变量名以字母开头，可以有字母、数字和下划线组成。但不能使用标点。</span><br><span class="line">变量名简洁明了，通过变量名可以直观看出变量所表示的物理意义。</span><br></pre></td></tr></table></figure>
+<h2 id="matlab命令"><a class="markdownIt-Anchor" href="#matlab命令">#</a> MATLAB 命令</h2>
+<h3 id="1清空环境变量及命令"><a class="markdownIt-Anchor" href="#1清空环境变量及命令">#</a> 1. 清空环境变量及命令</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">clear all      清除Workspace中的所有变量</span><br><span class="line">clc            清除Command Window中的所有命令</span><br></pre></td></tr></table></figure>
+<h3 id="2注释"><a class="markdownIt-Anchor" href="#2注释">#</a> 2. 注释</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">%%    有横线注释</span><br><span class="line">%     没有横线注释</span><br></pre></td></tr></table></figure>
+<h3 id="3运算"><a class="markdownIt-Anchor" href="#3运算">#</a> 3. 运算</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">加+	减-	乘*	除/</span><br></pre></td></tr></table></figure>
+<h3 id="4字符与字符串"><a class="markdownIt-Anchor" href="#4字符与字符串">#</a> 4. 字符与字符串</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s = &#x27;a&#x27;</span><br><span class="line">abs(a) = 97      绝对值  ascall码</span><br><span class="line">char(97) = a      字符串</span><br><span class="line">length( )         计算字符串的长度</span><br></pre></td></tr></table></figure>
+<h3 id="5num2str"><a class="markdownIt-Anchor" href="#5num2str">#</a> 5.num2str</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">s = num2str(A)</span><br><span class="line">s = num2str(A,precision)</span><br><span class="line">s = num2str(A,formatSpec)</span><br><span class="line"></span><br><span class="line">s = num2str(A) 将数值数组转换为表示数字的字符数组。输出格式取决于原始值的量级。num2str 对使用数值为绘图添加标签和标题非常有用。</span><br><span class="line">s = num2str(A,precision)返回表示数字的字符数组，最大有效位数由 precision 指定。</span><br><span class="line">s = num2str(A,formatSpec) 将 formatSpec 指定的格式应用到 A 所有元素。</span><br></pre></td></tr></table></figure>
+<h6 id="randn函数"><a class="markdownIt-Anchor" href="#randn函数">#</a> randn () 函数</h6>
+<p>randn () 函数用于产生正态分布的随机数，其调用格式和 rand () 函数基本一致，如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">X=randn % 返回一个标准正态分布的随机向量</span><br><span class="line">X=randn(n) % 产生nxn的矩阵，元素为一个标准正态分布中的值</span><br><span class="line">X=randn(x,y) %产生xxy的矩阵，元素为一个标准正态分布中的值</span><br><span class="line">X=randn(sz) %sz为矩阵，产生size(sz)大小的矩阵</span><br><span class="line">X=randn(...,typename)% typename可以是&#x27;single&#x27;或&#x27;double&#x27;，产生对应数据类型的随机数</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">r=randn;</span><br><span class="line">disp(r)</span><br><span class="line">X=randn(2,3);</span><br><span class="line">disp(X)</span><br><span class="line"></span><br><span class="line">-1.1658</span><br><span class="line">-1.1480		0.7223		-0.6669</span><br><span class="line"> 0.1049		2.5855		 0.1873</span><br></pre></td></tr></table></figure>
-
-<h6 id="randi-函数"><a href="#randi-函数" class="headerlink" title="randi()函数"></a>randi()函数</h6><p>randi()函数用于生成伪随机整数，也就是产生整数的函数。调用格式如下：</p>
+<h6 id="randi函数"><a class="markdownIt-Anchor" href="#randi函数">#</a> randi () 函数</h6>
+<p>randi () 函数用于生成伪随机整数，也就是产生整数的函数。调用格式如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">X=randi(imax) %返回一个(1,imax)之间的随机整数</span><br><span class="line">X=randi(imax,n)  %返回nxn的矩阵，元素为(1,imax)之间的随机整数</span><br><span class="line">X=randi(imax,sz1,sz2) %返回sz1xsz2的矩阵，元素为(1,imax)之间的随机整数</span><br><span class="line">X=randi(imax,sz) %sz为矩阵，返回size(sz)大小元素为(1,imax)之间的随机整数</span><br><span class="line">X=randi([imin,imax],...) %返回imin到imax之间的随机整数</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">X=randi(5);</span><br><span class="line">disp(X)</span><br><span class="line">X=randi(10,2,2);</span><br><span class="line">disp(X)</span><br><span class="line">X=randi([5,10],[2,2]);</span><br><span class="line">disp(X)</span><br><span class="line"></span><br><span class="line">3</span><br><span class="line"></span><br><span class="line">1		10</span><br><span class="line">3		 2</span><br><span class="line"></span><br><span class="line">9		10</span><br><span class="line">8		 5</span><br></pre></td></tr></table></figure>
-
-<h6 id="randperm-函数"><a href="#randperm-函数" class="headerlink" title="randperm()函数"></a>randperm()函数</h6><p>randperm()函数用于生成一组整数的随机排列，调用格式如下：</p>
+<h6 id="randperm函数"><a class="markdownIt-Anchor" href="#randperm函数">#</a> randperm () 函数</h6>
+<p>randperm () 函数用于生成一组整数的随机排列，调用格式如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p=randperm(n) %返回一个1~n的随机排列其不重复的行向量</span><br><span class="line">p=randperm(n,k) %返回一个1~n的随机排列其不重复的行向量</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">X=randperm(10);</span><br><span class="line">disp(X)</span><br><span class="line">X=randperm(10,5);</span><br><span class="line">disp(X)</span><br><span class="line"></span><br><span class="line">4		8		 2		10		9		1		5		6		7		3</span><br><span class="line"></span><br><span class="line">7		3		10		8		6</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">A = [1 2 3:4 5 6:7 8 9]   用空格或逗号间隔用:分割</span><br><span class="line">B = A&#x27;                    B等于A的转置[1 4 7:2 5 8:3 6 9]</span><br><span class="line">C = A(:)                  把A矩阵拉长[1:4:7:2:5:8:3:6:9]</span><br><span class="line">D = inv(A)                求逆</span><br><span class="line">A * D</span><br><span class="line">生成全是0的矩阵</span><br><span class="line">E = zeros(行，列，维度)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+<h2 id="矩阵"><a class="markdownIt-Anchor" href="#矩阵">#</a> 矩阵</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">A = [1 2 3:4 5 6:7 8 9]   用空格或逗号间隔用:分割</span><br><span class="line">B = A&#x27;                    B等于A的转置[1 4 7:2 5 8:3 6 9]</span><br><span class="line">C = A(:)                  把A矩阵拉长[1:4:7:2:5:8:3:6:9]</span><br><span class="line">D = inv(A)                求逆</span><br><span class="line">A * D</span><br><span class="line">生成全是0的矩阵</span><br><span class="line">E = zeros(行，列，维度)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">rand、randi和randn的区别？ </span><br><span class="line">1,rand生成均匀分布的伪随机数。分布在(0~1)之间主要语法:rand(m,n)生成m行n列的均匀分布的伪随机数</span><br><span class="line">rand(m.n,&#x27;double&#x27;)生成指定精度的均匀分布的伪随机数，参数还可以是&#x27;single&#x27; </span><br><span class="line">rand(Randstream,m,n)利用指定的RandStream(我理解为随机种子)生成伪</span><br><span class="line">随机数</span><br><span class="line">2,randn生成标准正态分布的伪随机数(均值为0，方差为1) </span><br><span class="line">主要语法:和上面一样</span><br><span class="line">3,randi生成均匀分布的伪随机整数</span><br><span class="line">主要语法:randi(iMax)在开区间(0,iMax)生成均匀分布的伪随机整数</span><br><span class="line">randi (iMax, m, n)在开区间(0,iMax)生成mXn型随机矩阵</span><br><span class="line">[= randi([iMin,iMax],m,n)在开区间(iMin, iMax)生成mXn型随机矩阵</span><br></pre></td></tr></table></figure>
+<h2 id="元胞数组"><a class="markdownIt-Anchor" href="#元胞数组">#</a> 元胞数组</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">元胞数组是MATLAB中特有的一种数据类型，是数组的一种，其内部元素可以是属于不同的数据类型，概念理解上，可以认为它和c语言里面的结构体、C++里面的对象很类似。元胞数组是matlab中的特色数据类型，它不同于其它数据类型(如字符型，字符数组或者叫字符串，以及一般的算术数据和数组)。它特有的存取数据方法决定了它的特点， 它有给人一种查询信息的感觉，可以逐渐追踪一直到所有的变量全部翻译成基本的数据信息。它的class函数输出就是cell (细胞之意)。 </span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">在MATLAB中，数组索引是从1开始的，而不是从0开始。这与许多其他编程语言（如C、C++、Java、Python等）的习惯不同，在这些语言中，数组索引是从0开始的。</span><br><span class="line"></span><br><span class="line">举个例子，如果你有一个MATLAB数组A，它有5个元素，那么这些元素的索引将是1到5：</span><br><span class="line"></span><br><span class="line">A = [10 20 30 40 50];</span><br><span class="line">element1 = A(1);  % 访问第一个元素</span><br><span class="line">element2 = A(2);  % 访问第二个元素</span><br><span class="line">element5 = A(5);  % 访问第五个元素</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">A = cell(1,6)一行六列</span><br><span class="line">[]		[]		[]		[]		[]		[]</span><br><span class="line">A&#123;2&#125; = eye(3)索引从一开始与python不同  把eye放在第二个格子中</span><br><span class="line">eye(3)生成一个3行3列对角元素为1，其他元素为0的矩阵</span><br><span class="line">[]		[3X3 double]	 []		[]		[]		[]</span><br><span class="line">A&#123;5&#125; = magic(5)</span><br><span class="line">17	24	 1	 8	15</span><br><span class="line">23	 5	 7	14	16</span><br><span class="line"> 4	 6	13	20	22</span><br><span class="line">10	12	19	21	 3</span><br><span class="line">11	18	25	 2	 9</span><br><span class="line">B = A&#123;5&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MAGIC </span><br><span class="line">·magic字面意思是魔方，魔术的意思。在matlab中用来生成n阶幻方。比如三阶幻方就是1-9九个数字，组成一个3*3的矩阵，使得该矩阵无论横、竖还是斜三个方向上的三个数的和总是相同的。幻方是一个很古老的问题，你试一下就知道了！ </span><br><span class="line">·magic(n)生成一个n阶幻方，就是把1-n^2排成一个nxn的矩阵，使得矩阵的每行、 每列，以及主、副对角线上面的n个数之和都相等(容易证明，这个和等于n*(nA2+1)/2). </span><br></pre></td></tr></table></figure>
+<h2 id="结构体"><a class="markdownIt-Anchor" href="#结构体">#</a> 结构体</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">books = struct(&#x27;name&#x27;,&#123;&#123;&#x27;Machine Learning&#x27;,&#x27;Data Mining&#x27;&#125;&#125;,&#x27;price&#x27;,[30 40])</span><br><span class="line"></span><br><span class="line">books.name               %属性 </span><br><span class="line">&#x27;Machine Learning&#x27; &#x27;Data Mining&#x27;</span><br><span class="line">books.name(1)</span><br><span class="line">&#x27;Machine Learning&#x27;                       cell</span><br><span class="line">books.name&#123;1&#125;</span><br><span class="line">Machine Learning                         字符串</span><br></pre></td></tr></table></figure>
 
       <div class="tags">
           <a href="/tags/matlab/" rel="tag"><i class="ic i-tag"></i> matlab</a>
@@ -189,7 +193,7 @@ Yume Shoka = Hexo</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2024-05-21 20:34:08" itemprop="dateModified" datetime="2024-05-21T20:34:08+08:00">2024-05-21</time>
+    <time title="Modified: 2024-05-22 21:04:29" itemprop="dateModified" datetime="2024-05-22T21:04:29+08:00">2024-05-22</time>
   </span>
 </div>
 
@@ -200,7 +204,7 @@ Yume Shoka = Hexo</title>
   <div id="qr">
       
       <div>
-        <img data-src="/images/wechatpay.png" alt="John Doe WeChat Pay">
+        <img data-src="/images/wechatpay.png" alt="luren WeChat Pay">
         <p>WeChat Pay</p>
       </div>
   </div>
@@ -211,7 +215,7 @@ Yume Shoka = Hexo</title>
 <div id="copyright">
 <ul>
   <li class="author">
-    <strong>Post author:  </strong>John Doe <i class="ic i-at"><em>@</em></i>Hexo
+    <strong>Post author:  </strong>luren <i class="ic i-at"><em>@</em></i>圥忈的博客
   </li>
   <li class="link">
     <strong>Post link: </strong>
@@ -258,15 +262,15 @@ Yume Shoka = Hexo</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#MATLAB%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="toc-number">1.</span> <span class="toc-text">MATLAB变量命名规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MATLAB%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">MATLAB命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%B8%85%E7%A9%BA%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%8F%8A%E5%91%BD%E4%BB%A4"><span class="toc-number">2.1.</span> <span class="toc-text">1.清空环境变量及命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%B3%A8%E9%87%8A"><span class="toc-number">2.2.</span> <span class="toc-text">2.注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%BF%90%E7%AE%97"><span class="toc-number">2.3.</span> <span class="toc-text">3.运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%AD%97%E7%AC%A6%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">2.4.</span> <span class="toc-text">4.字符与字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-num2str"><span class="toc-number">2.5.</span> <span class="toc-text">5.num2str</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#randn-%E5%87%BD%E6%95%B0"><span class="toc-number">2.5.0.0.1.</span> <span class="toc-text">randn()函数</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#randi-%E5%87%BD%E6%95%B0"><span class="toc-number">2.5.0.0.2.</span> <span class="toc-text">randi()函数</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#randperm-%E5%87%BD%E6%95%B0"><span class="toc-number">2.5.0.0.3.</span> <span class="toc-text">randperm()函数</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5"><span class="toc-number">3.</span> <span class="toc-text">矩阵</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#matlab%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="toc-number">1.</span> <span class="toc-text"> MATLAB 变量命名规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#matlab%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text"> MATLAB 命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E6%B8%85%E7%A9%BA%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%8F%8A%E5%91%BD%E4%BB%A4"><span class="toc-number">2.1.</span> <span class="toc-text"> 1. 清空环境变量及命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E6%B3%A8%E9%87%8A"><span class="toc-number">2.2.</span> <span class="toc-text"> 2. 注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E8%BF%90%E7%AE%97"><span class="toc-number">2.3.</span> <span class="toc-text"> 3. 运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E5%AD%97%E7%AC%A6%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">2.4.</span> <span class="toc-text"> 4. 字符与字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5num2str"><span class="toc-number">2.5.</span> <span class="toc-text"> 5.num2str</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#randn%E5%87%BD%E6%95%B0"><span class="toc-number">2.5.0.0.1.</span> <span class="toc-text"> randn () 函数</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#randi%E5%87%BD%E6%95%B0"><span class="toc-number">2.5.0.0.2.</span> <span class="toc-text"> randi () 函数</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#randperm%E5%87%BD%E6%95%B0"><span class="toc-number">2.5.0.0.3.</span> <span class="toc-text"> randperm () 函数</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5"><span class="toc-number">3.</span> <span class="toc-text"> 矩阵</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%83%E8%83%9E%E6%95%B0%E7%BB%84"><span class="toc-number">4.</span> <span class="toc-text"> 元胞数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E4%BD%93"><span class="toc-number">5.</span> <span class="toc-text"> 结构体</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <img class="image" itemprop="image" alt="John Doe"
+  <img class="image" itemprop="image" alt="luren"
       data-src="/images/avatar.jpg">
-  <p class="name" itemprop="name">John Doe</p>
+  <p class="name" itemprop="name">luren</p>
   <div class="description" itemprop="description"></div>
 </div>
 
@@ -331,7 +335,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2024/05/07/python%E5%B0%8F%E7%BB%93/" title="&#39;python小结&#39;">'python小结'</a></span>
+    <span><a href="/2024/05/11/Base%E5%AE%B6%E6%97%8F%E7%BC%96%E7%A0%81/" title="&#39;Base家族编码&#39;">'Base家族编码'</a></span>
   </li>
 
       
@@ -349,7 +353,16 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2024/05/11/Base%E5%AE%B6%E6%97%8F%E7%BC%96%E7%A0%81/" title="&#39;Base家族编码&#39;">'Base家族编码'</a></span>
+    <span><a href="/2024/05/08/buuctf/" title="&#39;buuctf&#39;">'buuctf'</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2024/05/07/python%E5%B0%8F%E7%BB%93/" title="&#39;python小结&#39;">'python小结'</a></span>
   </li>
 
       
@@ -370,15 +383,6 @@ Yume Shoka = Hexo</title>
     <span><a href="/2024/05/08/number-theory/" title="&#39;number-theory&#39;">'number-theory'</a></span>
   </li>
 
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2024/05/08/buuctf/" title="&#39;buuctf&#39;">'buuctf'</a></span>
-  </li>
-
   </ul>
 </div>
 <div>
@@ -395,7 +399,7 @@ Yume Shoka = Hexo</title>
     <span class="with-love">
       <i class="ic i-sakura rotate"></i>
     </span>
-    <span class="author" itemprop="copyrightHolder">John Doe @ Yume Shoka</span>
+    <span class="author" itemprop="copyrightHolder">luren @ Yume Shoka</span>
   </div>
   <div class="powered-by">
     Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

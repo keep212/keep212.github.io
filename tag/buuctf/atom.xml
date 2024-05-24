@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>圥忈的博客 • Posts by &#34;buuctf&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2024-05-08T04:19:48.000Z</updated>
+    <category term="Base家族编码" />
+    <category term="buuctf" />
+    <category term="matlab" />
+    <category term="number-theory" />
+    <category term="rsa" />
+    <entry>
+        <id>http://example.com/2024/05/08/buuctf/</id>
+        <title>&#39;buuctf&#39;</title>
+        <link rel="alternate" href="http://example.com/2024/05/08/buuctf/"/>
+        <content type="html">&lt;h2 id=&#34;一眼就解密&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一眼就解密&#34;&gt;#&lt;/a&gt; 一眼就解密&lt;/h2&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;题目&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;下面的字符串解密后便能获得flag：ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30=&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;注意：得到的 flag 请包上 flag&amp;#123;&amp;#125; 提交&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;解题思路&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;观察密文，可以看到有一个=，这是base 64的标志，三个字节为一组，需要4个base 64 编码来表达，不够的编码用=来补充&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;所以用base 64来解密&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;打开 http://www.hiencode.com/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;找到base 64解密&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;输入ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30=&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;得到flag&amp;#123;THE_FLAG_OF_THIS_STRING&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="buuctf" />
+        <updated>2024-05-08T04:19:48.000Z</updated>
+    </entry>
+</feed>

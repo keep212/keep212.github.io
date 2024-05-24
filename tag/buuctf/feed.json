@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "圥忈的博客 • All posts by \"buuctf\" tag",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2024/05/08/buuctf/",
+            "url": "http://example.com/2024/05/08/buuctf/",
+            "title": "'buuctf'",
+            "date_published": "2024-05-08T04:19:48.000Z",
+            "content_html": "<h2 id=\"一眼就解密\"><a class=\"markdownIt-Anchor\" href=\"#一眼就解密\">#</a> 一眼就解密</h2>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">题目</span><br><span class=\"line\">下面的字符串解密后便能获得flag：ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30=</span><br><span class=\"line\">注意：得到的 flag 请包上 flag&#123;&#125; 提交</span><br></pre></td></tr></table></figure>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">解题思路</span><br><span class=\"line\">观察密文，可以看到有一个=，这是base 64的标志，三个字节为一组，需要4个base 64 编码来表达，不够的编码用=来补充</span><br><span class=\"line\">所以用base 64来解密</span><br></pre></td></tr></table></figure>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">打开 http://www.hiencode.com/</span><br><span class=\"line\">找到base 64解密</span><br><span class=\"line\">输入ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30=</span><br><span class=\"line\">得到flag&#123;THE_FLAG_OF_THIS_STRING&#125;</span><br></pre></td></tr></table></figure>\n",
+            "tags": [
+                "buuctf"
+            ]
+        }
+    ]
+}
