@@ -5,21 +5,13 @@
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Sat, 25 May 2024 12:11:14 +0800</pubDate>
-        <lastBuildDate>Sat, 25 May 2024 12:11:14 +0800</lastBuildDate>
+        <pubDate>Tue, 21 May 2024 18:32:06 +0800</pubDate>
+        <lastBuildDate>Tue, 21 May 2024 18:32:06 +0800</lastBuildDate>
         <category>Base家族编码</category>
         <category>buuctf</category>
         <category>matlab</category>
         <category>number-theory</category>
         <category>rsa</category>
-        <item>
-            <guid isPermalink="true">http://example.com/2024/05/25/1/</guid>
-            <title>&#39;1&#39;</title>
-            <link>http://example.com/2024/05/25/1/</link>
-            <pubDate>Sat, 25 May 2024 12:11:14 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;初审、&lt;/p&gt;
- ]]></description>
-        </item>
         <item>
             <guid isPermalink="true">http://example.com/2024/05/21/matlab/</guid>
             <title>&#39;matlab&#39;</title>
